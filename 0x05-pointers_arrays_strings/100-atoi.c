@@ -1,22 +1,39 @@
-#include <stdio.h>
 #include "main.h"
 
 /**
- * main - prints the largest prime factor of 612852475143
- * Return: always 0
+ *  _atoi - Convert a string to an integer.
+ *   @s: The pointer to convert
+ *  Return: A integer
 **/
 
-int main(void)
+int _atoi(char *s)
 
 {
-	unsigned long int i, n = 612852475143;
+	int c = 0;
+	unsigned int ni = 0;
+	int min = 1;
+	int isi = 0;
 
-	for (i = 3; i < 782849; i = i + 2)
+	while (s[c])
 	{
-		while ((n % i == 0) && (n != i))
-			n = n / i;
+		if (s[c] == 45)
+		{
+			min *= -1;
+		}
+		while (s[c] >= 48 && s[c] <= 57)
+		{
+			isi = 1;
+			ni = (ni * 10) + (s[c] - '0');
+			c++;																						}
+
+		if (isi == 1)
+		{
+			break;
+		}
+		c++;
 	}
 
-	printf("%lu\n", n);
-	return (0);
+
+	ni *= min;
+	return (ni);
 }
