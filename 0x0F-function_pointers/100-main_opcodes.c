@@ -27,8 +27,8 @@ int main(int argc, char *argv[])
 			printf("Error\n");
 
 			exit(2);
-
 		}
+
 		ud_unit(&ud_obj);
 
 		ud_set_input_buffer(&ud_obj, argv[1], val);
@@ -44,5 +44,4 @@ int main(int argc, char *argv[])
 		}
 	}
 	return (0);
-
 }
