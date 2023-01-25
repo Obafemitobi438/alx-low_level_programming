@@ -3,17 +3,20 @@
 #include <stdarg.h>
 
 /**
- * print_all - Prints all of the arguments when specified
+ * print_all - prints anything
  * @format: specifies the necessary operations
+ *
  * Return: void
- **/
+ */
 void print_all(const char * const format, ...)
 {
 	unsigned int i;
-	char *str, *separator;
+	char *s, *separator;
 	va_list args;
 
 	va_start(args, format);
+
+	separator = "";
 
 	i = 0;
 	while (format && format[i])
