@@ -1,7 +1,6 @@
 #include "hash_tables.h"
 
 /**
- * This is just a comment
  * shash_table_create - creates a sorted hash table
  * @size: size of the hash table
  *
