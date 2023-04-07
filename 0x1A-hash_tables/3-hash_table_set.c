@@ -31,8 +31,7 @@ hash_node_t *make_hash_node(const char *key, const char *value)
 	return (node);
 }
 
-
-/*
+/**
  * hash_table_set - sets a key to a value in the hash table
  * @ht: hash table to add elemt to
  * @key: key for the data
